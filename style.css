@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 html,body{
     height: 100%;
     width: 100%;
-    font-family: 'poopins', sans-serif;
     background: linear-gradient(to right, rgb(78,26,126,0.8) 1%,rgb(171,9,162)50%,#ff5564 100%);
 }
 .signup-container{
@@ -38,10 +40,11 @@ form h2{
 form input{
     width: 90%;
     padding: 0.5em;
+    background-color: #ffffff;
+    border: 0.1px solid rgba(0,0,0,0.3);
     margin-bottom: 1.5em;
     font-size: 1em;
     border-radius: 0.3em;
-    outline: #999999;
 }
 form #register{
     width: 90%;
@@ -55,11 +58,16 @@ form #register{
     font-size: 1em;
     background-color: #ffbd39;
     color: #000000;
-    border-color: #ffbd39;
+    border: 0.1em solid #ffbd39;
     border-radius: 2em;
     cursor: pointer;
+    transition: all 1s ease-in-out 0s;
 }
-
+form #register:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
 @media screen and (max-width: 768px){
     .signup-container{
         width: 90%;
@@ -78,7 +86,7 @@ form #register{
         width: 100%;
         margin-bottom: 0.5em;
         border: none;
-        border-bottom: 2px solid #000000;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
         outline: none;
         border-radius: 0px;
     }
