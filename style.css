@@ -6,5 +6,87 @@
 html,body{
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poopins', sans-serif;
+    background: linear-gradient(to right, rgb(78,26,126,0.8) 1%,rgb(171,9,162)50%,#ff5564 100%);
 }
+.signup-container{
+    background-color: #ffffff;
+    width: 45%;
+    height: 80%;
+    padding: 0.5em;
+    position: relative;
+    top: 10%;
+    left: 30%;
+    border-radius: 1.5em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+form h2{
+    font-size: auto;
+    margin-bottom: 1em;
+    color: #000000;
+    text-align: center;
+}
+form input{
+    width: 90%;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    outline: #999999;
+}
+form #register{
+    width: 90%;
+    height: 3em;
+    font-weight: bold;
+    outline: none;
+    padding: 0.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    font-size: 1em;
+    background-color: #ffbd39;
+    color: #000000;
+    border-color: #ffbd39;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .signup-container{
+        width: 90%;
+        left: 5%;
+    }
+    form{
+        padding: 0.5em;
+        margin: 0.5em;
+        height: 90%;
+    }
+    form h2{
+        font-size: 1em;
+    }
+    form input{
+        font-size: 1em;
+        width: 100%;
+        margin-bottom: 0.5em;
+        border: none;
+        border-bottom: 2px solid #000000;
+        outline: none;
+        border-radius: 0px;
+    }
+    form #register{
+        font-size: 1em;
+        width: 100%;
+        margin-bottom: 1em;
+        border: #ffbd39;
+    }
+}
+
