@@ -9,15 +9,17 @@
 </head>
 <body>
     <div class="signup-container">
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="validate(event)">
             <h2>Sign Up</h2>
-            <input type="text" name="name" id="name" class=".field" placeholder="Name" required>
-            <input type="text" name="uname" id="uname" placeholder="User Name" class=".field" required>
-            <input type="email" name="email" id="email" class=".field" placeholder="Email" required>
-            <input type="number" name="mobile no" id="mobile no" class=".field" placeholder="Mobile No" required>
-            <input type="password" name="password" id="password" class=".field" placeholder="Password" required>
+            <input type="text" name="name" id="name" class=".field" placeholder="Name">
+            <input type="text" name="uname" id="uname" placeholder="User Name" class=".field">
+            <input type="email" name="email" id="email" class=".field" placeholder="Email">
+            <input type="number" name="mobile no" id="mobileNo" class=".field" placeholder="Mobile No">
+            <input type="password" name="password" id="password" class=".field" placeholder="Password">
             <button type="submit" id="register" class=".field">Sign Up</button>
-            <p>Already have an account? <a href="#" id="loginbtn">Login</a></p>
+            <p>Already have an account? <a href="#" id="loginbtn" onclick="asu()">Login</a>
+                <a href="#" id="signupbtn" style="visibility: hidden;">Sign Up</a>
+            </p>
         </form>
     </div>
     <script src="script.js"></script>
