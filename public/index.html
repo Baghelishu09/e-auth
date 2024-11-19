@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Authentication System</title>
+  </head>
+  <body>
+    <!-- Registration Form -->
+    <div id="signup-container">
+      <form action="/submit" method="post" onclick="validate(event)">
+        <h2>Sign Up</h2>
+        <!-- Input fields for signup form -->
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="field"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          name="uname"
+          id="uname"
+          placeholder="User Name"
+          class="field"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="field"
+          placeholder="Email"
+        />
+        <input
+          type="number"
+          name="mobileNo"
+          id="mobileNo"
+          class="field"
+          placeholder="Mobile No"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="field"
+          placeholder="Password"
+        />
+        <button type="submit" id="register" class="field">Sign Up</button>
+        <!-- Link to switch to login form -->
+        <p>
+          Already have an account?
+          <a href="#" id="loginbtn2" onclick="loginbtn()">Login</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Login Form (hidden by default) -->
+    <div id="login_form" style="display: none">
+      <form action="#" method="post">
+        <h2>Login</h2>
+        <!-- Input fields for login form -->
+        <input
+          type="text"
+          name="uname"
+          id="uname"
+          class=".field"
+          placeholder="User Name"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class=".field"
+          placeholder="Password"
+        />
+        <button type="button" id="loginbtn" class=".field">Login</button>
+        <!-- Link to switch back to signup form -->
+        <p>Don't have an account? <a href="#" id="signupbtn">Sign Up</a></p>
+      </form>
+    </div>
+
+    <!-- OTP Verification Form (hidden by default) -->
+    <div id="otpverification" style="display: none">
+      <form action="#" method="post">
+        <h2>OTP Verification</h2>
+        <!-- Input for OTP code -->
+        <input
+          type="number"
+          name="otp"
+          id="otp"
+          class=".field"
+          placeholder="Enter OTP"
+        />
+        <button type="submit" id="verify" class=".field">Verify</button>
+        <!-- Button to resend OTP without submitting the form -->
+        <button type="submit" id="resend" class=".field">Resend OTP</button>
+      </form>
+    </div>
+
+    <div id="passwordreset" style="display: none">
+      <form action="#" method="post">
+        <h2>Forget Password</h2>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class=".field"
+          placeholder="Enter Email"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class=".field"
+          placeholder="New Password"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class=".field"
+          placeholder="Confirm Password"
+        />
+        <button type="submit" id="send" class=".field">Send OTP</button>
+        <button type="submit" id="reset" class=".field">Reset Password</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
