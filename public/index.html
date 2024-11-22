@@ -11,7 +11,7 @@
   <body>
     <!-- Registration Form -->
     <div id="signup-container">
-      <form action="/submit" method="post" onclick="validate(event)">
+      <form action="/submit" method="post">
         <h2>Sign Up</h2>
         <!-- Input fields for signup form -->
         <input
@@ -53,31 +53,31 @@
         <!-- Link to switch to login form -->
         <p>
           Already have an account?
-          <a href="#" id="loginbtn2" onclick="loginbtn()">Login</a>
+          <a href="#" id="loginbtn2">Login</a>
         </p>
       </form>
     </div>
 
     <!-- Login Form (hidden by default) -->
     <div id="login_form" style="display: none">
-      <form action="#" method="post">
+      <form action="/login" method="post">
         <h2>Login</h2>
         <!-- Input fields for login form -->
         <input
           type="text"
-          name="uname"
-          id="uname"
-          class=".field"
+          name="uname_login"
+          id="uname_login"
+          class="field"
           placeholder="User Name"
         />
         <input
           type="password"
-          name="password"
-          id="password"
-          class=".field"
+          name="password_login"
+          id="password_login"
+          class="field"
           placeholder="Password"
         />
-        <button type="button" id="loginbtn" class=".field">Login</button>
+        <button type="button" id="loginbtn" class="field">Login</button>
         <!-- Link to switch back to signup form -->
         <p>Don't have an account? <a href="#" id="signupbtn">Sign Up</a></p>
       </form>
@@ -85,19 +85,19 @@
 
     <!-- OTP Verification Form (hidden by default) -->
     <div id="otpverification" style="display: none">
-      <form action="#" method="post">
+      <form action="/otp" method="post">
         <h2>OTP Verification</h2>
         <!-- Input for OTP code -->
         <input
           type="number"
           name="otp"
           id="otp"
-          class=".field"
+          class="field"
           placeholder="Enter OTP"
         />
-        <button type="submit" id="verify" class=".field">Verify</button>
+        <button type="submit" id="verifyotp" class="field">Verify OTP</button>
         <!-- Button to resend OTP without submitting the form -->
-        <button type="submit" id="resend" class=".field">Resend OTP</button>
+        <button type="submit" id="resendotp" class="field">Resend OTP</button>
       </form>
     </div>
 
@@ -106,27 +106,27 @@
         <h2>Forget Password</h2>
         <input
           type="email"
-          name="email"
-          id="email"
-          class=".field"
+          name="email_forget"
+          id="email_forget"
+          class="field"
           placeholder="Enter Email"
         />
         <input
           type="password"
           name="password"
-          id="password"
-          class=".field"
+          id="password_forget"
+          class="field_forget"
           placeholder="New Password"
         />
         <input
           type="password"
-          name="password"
-          id="password"
-          class=".field"
+          name="password_confirm"
+          id="password_confirm"
+          class="field"
           placeholder="Confirm Password"
         />
-        <button type="submit" id="send" class=".field">Send OTP</button>
-        <button type="submit" id="reset" class=".field">Reset Password</button>
+        <button type="button" id="send" class="field">Send OTP</button>
+        <button type="button" id="reset" class="field">Reset Password</button>
       </form>
     </div>
 

@@ -21,7 +21,8 @@ body {
   align-items: center;
 }
 #signup-container,
-#login_form {
+#login_form,
+#otpverification {
   background-color: #ffffff;
   width: 45%;
   height: 80%;
@@ -71,6 +72,24 @@ form #register,
   cursor: pointer;
   transition: all 1s ease-in-out 0s;
 }
+#verifyotp,
+#resendotp {
+  width: 50%;
+  height: 3em;
+  font-weight: bold;
+  outline: none;
+  padding: 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: #ffbd39;
+  color: #000000;
+  margin-bottom: 2em;
+  border: 0.1em solid #ffbd39;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: all 1s ease-in-out 0s;
+}
 form #register:hover,
 form #loginbtn:hover {
   background-color: #000000;
@@ -79,7 +98,8 @@ form #loginbtn:hover {
 }
 @media screen and (max-width: 768px) {
   #signup-container,
-  #login_form {
+  #login_form,
+  #otpverification {
     height: fit-content;
     width: 90%;
     left: 5%;
@@ -102,7 +122,8 @@ form #loginbtn:hover {
     border-radius: 0px;
   }
   form #register,
-  #loginbtn {
+  #loginbtn
+  {
     font-size: 1em;
     width: 100%;
     margin-bottom: 1em;
